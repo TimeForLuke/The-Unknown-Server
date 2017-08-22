@@ -1,7 +1,10 @@
 #!/bin/bash
 # Starts the server and automatically restarts it if the process ends.
+# If the server crashes, but the process is still running, the server could
+# still restart depending on how that's configured in ../server/spigot.yml.
 
 while true; do
+    cd "$(dirname "${BASH_SOURCE[0]}")"
     ./start-server.sh
 
     echo "If you want to completely stop the server process now, press Ctrl+C

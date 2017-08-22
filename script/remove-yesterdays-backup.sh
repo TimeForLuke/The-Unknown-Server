@@ -1,8 +1,9 @@
 #!/bin/sh
 # Removes yesterday's Minecraft and MySQL server backups
 
-YESTERDAY=$(date -d "1 day ago" +%Y-%m-%d)
+yesterday=$(date -d "1 day ago" +%Y-%m-%d)
+dir="$(dirname "${BASH_SOURCE[0]}")/../backup"
 
-rm ../backup/backup-database-${YESTERDAY}.sql.gz
-rm ../backup/backup-survival-${YESTERDAY}.tar.gz
+rm ${dir}/backup-database-${yesterday}.sql.gz
+rm ${dir}/backup-survival-${yesterday}.tar.gz
 
