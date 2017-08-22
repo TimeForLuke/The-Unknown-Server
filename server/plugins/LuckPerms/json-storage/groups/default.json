@@ -1,0 +1,28 @@
+{
+  "name": "default",
+  "permissions": [
+    "essentials.afk",
+    "essentials.chat.url",
+    "essentials.delhome",
+    "essentials.help",
+    "essentials.home",
+    "essentials.list",
+    "essentials.mail",
+    "essentials.mail.send",
+    "essentials.motd",
+    "essentials.msg",
+    "essentials.msg.url",
+    "essentials.ping",
+    "essentials.rules",
+    "essentials.seen",
+    "essentials.sethome",
+    "essentials.sethome.multiple",
+    "essentials.sethome.multiple.default",
+    "essentials.spawn",
+    "essentials.tpa",
+    "essentials.tpaccept",
+    "essentials.tpahere",
+    "essentials.tpdeny",
+    "prefix.0. \u0026a[U] "
+  ]
+}

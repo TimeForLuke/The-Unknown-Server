@@ -1,0 +1,7 @@
+{
+  "name": "moderator",
+  "permissions": [
+    "group.default",
+    "prefix.1. \u00266[M] "
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "uuid": "defc91f2-14b5-4a6f-8faf-5ef82068a3d0",
+  "name": "omniscimus",
+  "primaryGroup": "default",
+  "permissions": [
+    "luckperms.*",
+    "group.administrator",
+    "group.default"
+  ]
+}

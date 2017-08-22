@@ -1,0 +1,2 @@
+&6Welcome to &7The Unknown&6, {USERNAME}!
+&eBy playing on this server, you agree to the /rules.

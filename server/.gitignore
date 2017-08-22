@@ -1,0 +1,14 @@
+spigot*.jar
+
+# These files are ignored because they have nothing to do with the server's
+# configuration.
+crash-reports/
+logs/
+world/
+world_nether/
+world_the_end/
+
+# These files are ignored for privacy reasons.
+banned-ips.json
+banned-players.json
+usercache.json
