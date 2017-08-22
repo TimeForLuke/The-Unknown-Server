@@ -1,2 +1,3 @@
-# The-Unknown-Server
-Contains the server configuration.
+# The Unknown Server
+
+This repository contains the configuration for the Minecraft server.
