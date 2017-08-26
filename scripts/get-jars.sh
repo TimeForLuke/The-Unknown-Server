@@ -15,7 +15,6 @@
 # https://www.spigotmc.org/resources/coreprotect.8631/
 
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
-mkdir bin
 mkdir build
 cd build
 
@@ -78,4 +77,4 @@ rm -rf build/
 
 echo
 echo "CoreProtect is proprietary and needs to be downloaded manually into ../server/plugins or in ../bin because CloudFlare doesn't like scripts. Download URL:"
-echo "https://www.spigotmc.org/resources/coreprotect.8631/"
+echo "https://www.spigotmc.org/resources/coreprotect.8631/download?version=129564"
