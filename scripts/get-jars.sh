@@ -32,6 +32,7 @@ cd build
 # Compile Spigot's BuildTools
 git clone https://hub.spigotmc.org/stash/scm/spigot/buildtools.git
 cd buildtools
+git reset --hard 59469f0fef76246025b63f0dd3287cfa19a06505
 mvn package
 mkdir ../Bukkit
 cp target/BuildTools.jar ../Bukkit
@@ -57,6 +58,7 @@ cd ..
 # Get NoCheatPlus
 git clone https://github.com/NoCheatPlus/NoCheatPlus.git
 cd NoCheatPlus
+git reset --hard 7e43deaa28fb66a7b8273eed8d9dfa8956e97d62
 mvn package -P spigot1_11_r1 -P ncp_base
 cp target/NoCheatPlus.jar ../../bin
 cd ..
