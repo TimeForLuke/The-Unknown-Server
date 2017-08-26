@@ -39,7 +39,7 @@ The following plugins are currently in use:
 
 ## Setting up the server
 
-There are some scripts available in `script/` to set up the server:
+There are some scripts available in `scripts/` to set up the server:
 
 - `get-jars.sh` will download and compile the required jar files where possible and place them in `bin/`.
 - `install-jars.sh` will copy the jar files from `bin/` to their appropriate places in `server/`.
