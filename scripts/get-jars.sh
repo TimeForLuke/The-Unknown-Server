@@ -16,6 +16,11 @@
 
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
+# Clear bin/ first to make sure we won't have old versions in there
+
+rm bin/*
+git checkout -- bin
+
 # Get the jars from git-lfs
 
 git lfs fetch
