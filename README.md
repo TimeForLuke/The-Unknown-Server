@@ -20,6 +20,34 @@ Because the world border information is kept in the world save files, this repos
 
 Hosting a server costs money. The server's speed (higher speed => less lag) depends on how much money we can spend on hosting. Similarly, we can increase the world border size if we have enough money to pay for a server with more storage space. (To increase the world border, we'd need a more or less persistent source of income, because we pay for the server monthly and if we increase the size, we can't easily decrease it again without a map reset.)
 
+## Plugins
+
+Before (a new version of) a plugin is added, it should be checked if it creates any files that should be ignored by Git because it contains privacy-sensitive information. Such files should be included in `.gitignore` files in the appropriate directories.
+
+The following plugins are currently in use:
+
+- [CoreProtect](https://www.spigotmc.org/resources/coreprotect.8631/) v2.14.2. All rights reserved. The jar file is not included in this repository.
+- [EssentialsX](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [EssentialsXChat](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) v16.7.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/) v3.3. Licensed under the MIT License. The full text of this license can be found in the file `licenses/MIT-Luckperms.txt`.
+- [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds) latest dev version. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licences/GPLv3.txt`.
+- [Vault](http://dev.bukkit.org/bukkit-plugins/vault/) v1.5.6. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [WorldEdit](http://builds.enginehub.org/) v6.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [WorldGuard](http://builds.enginehub.org/) v6.2. Licensed under the GNU Lesser General Public License version 3. The full text of this license can be found in the file `licenses/LGPLv3-WorldGuard.txt`.
+
+## Setting up the server
+
+There are some scripts available in `script/` to set up the server:
+
+- `get-jars.sh` will download and compile the required jar files where possible and place them in `bin/`.
+- `install-jars.sh` will copy the jar files from `bin/` to their appropriate places in `server/`.
+
 ## Contributing
 
 If you have any suggestions for improvements to the server, you can open an issue in the GitHub issue tracker, or contact one of the administrators. Or, even better, you can fork this project on GitHub and make the improvements yourself. Pull requests are welcome! (But not guaranteed to be merged; it may be better to open an issue first if you plan on making radical changes.)
+
+## License
+
+This plugin is licensed under the MIT license, which can be found in the file `LICENSE`.
