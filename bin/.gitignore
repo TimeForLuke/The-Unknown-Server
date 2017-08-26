@@ -1,0 +1,14 @@
+*
+
+# Ignore everything except:
+
+!README.md
+!.gitignore
+
+# Include these binaries in git because of bugs in their build processes
+
+!EssentialsX-2.0.1.jar
+!EssentialsXChat-2.0.1.jar
+!EssentialsXSpawn-2.0.1.jar
+!LuckPerms-Bukkit-3.3.13.jar
+!Vault.jar
