@@ -57,17 +57,17 @@ tar -xzf WorldEdit-6.1.tar.gz
 cd WorldEdit-6.1
 ./gradlew setupDevWorkspace
 ./gradlew build
-cp worldedit-bukkit/build/libs/worldedit-bukkit-6.1.jar ../../bin
+cp worldedit-bukkit/build/libs/worldedit-bukkit-6.1-dist.jar ../../bin
 cd ..
 
 # Get WorldGuard
-wget https://github.com/sk89q/WorldGuard/archive/6.2.tar.gz
-mv 6.2.tar.gz WorldGuard-6.2.tar.gz
-tar -xzf WorldGuard-6.2.tar.gz
-cd WorldGuard-6.2
+# Release 6.2 was outdated.
+git clone https://github.com/sk89q/WorldGuard.git
+cd WorldGuard
+git reset --hard 3a8e3e84b8ac118cf83daa4fe7b492dfd27a96b5
 chmod +x gradlew
 ./gradlew build
-cp worldguard-legacy/build/libs/worldguard-legacy-6.2.1-SNAPSHOT.jar ../../bin
+cp worldguard-legacy/build/libs/worldguard-legacy-6.2.2-SNAPSHOT-dist.jar ../../bin
 cd ..
 
 # Everything is in bin/ now.
