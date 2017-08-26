@@ -15,6 +15,12 @@
 # https://www.spigotmc.org/resources/coreprotect.8631/
 
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# Get the jars from git-lfs
+
+git lfs fetch
+git lfs checkout
+
 mkdir build
 cd build
 
