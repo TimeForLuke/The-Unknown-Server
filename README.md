@@ -32,7 +32,7 @@ The following plugins are currently in use:
 - [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) v16.7.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/) v3.3. Licensed under the MIT License. The full text of this license can be found in the file `licenses/MIT-Luckperms.txt`.
-- [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds) latest dev version. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licences/GPLv3.txt`.
+- [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds) latest dev version. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [Vault](http://dev.bukkit.org/bukkit-plugins/vault/) v1.5.6. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [WorldEdit](http://builds.enginehub.org/) v6.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [WorldGuard](http://builds.enginehub.org/) v6.2. Licensed under the GNU Lesser General Public License version 3. The full text of this license can be found in the file `licenses/LGPLv3-WorldGuard.txt`.
@@ -50,4 +50,4 @@ If you have any suggestions for improvements to the server, you can open an issu
 
 ## License
 
-This plugin is licensed under the MIT license, which can be found in the file `LICENSE`.
+This project is licensed under the MIT license, which can be found in the file `LICENSE`.
