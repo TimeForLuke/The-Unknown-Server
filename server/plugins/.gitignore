@@ -1,0 +1,4 @@
+# Don't include any binaries here. Any jars should be in /bin/ and can be
+# copied here by the install script.
+
+*.jar
