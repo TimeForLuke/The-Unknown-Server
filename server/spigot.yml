@@ -12,13 +12,7 @@
 
 config-version: 11
 settings:
-  debug: false
   save-user-cache-on-stop-only: false
-  late-bind: true
-  bungeecord: false
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ../scripts/start-server.sh
   sample-count: 12
   player-shuffle: 0
   filter-creative-items: true
@@ -27,7 +21,6 @@ settings:
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   item-dirty-ticks: 20
-  netty-threads: 4
   attribute:
     maxHealth:
       max: 2048.0
@@ -35,11 +28,17 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
+  bungeecord: false
+  late-bind: true
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ../scripts/start-server.sh
+  netty-threads: 4
+  debug: false
   moved-too-quickly-threshold: 100.0
   global-api-cache: true
 commands:
   tab-complete: -1
-  log: true
   spam-exclusions:
   - /skill
   silent-commandblock-console: false
@@ -48,6 +47,7 @@ commands:
   - summon
   - testforblock
   - tellraw
+  log: true
 messages:
   whitelist: The Unknown is temporarily whitelisted. Check back soon!
   unknown-command: Unknown command. Type "/help" for help.
@@ -55,29 +55,18 @@ messages:
   outdated-client: Outdated client! Please use {0}
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled
 stats:
   disable-saving: true
   forced-stats:
     achievement:
       openInventory: 1
-advancements:
-  disable-saving: false
-  disabled:
-  - minecraft:story/disabled
 world-settings:
   default:
     verbose: false
-    item-despawn-rate: 6000
-    merge-radius:
-      item: 4.0
-      exp: 6.0
-    zombie-aggressive-towards-villager: true
-    arrow-despawn-rate: 1200
-    wither-spawn-sound-radius: 0
-    view-distance: 10
-    enable-zombie-pigmen-portal-spawns: false
-    hanging-tick-frequency: 100
-    nerf-spawner-mobs: false
     mob-spawn-range: 4
     growth:
       cactus-modifier: 100
@@ -123,6 +112,17 @@ world-settings:
     max-tick-time:
       tile: 50
       entity: 50
+    item-despawn-rate: 6000
+    merge-radius:
+      item: 4.0
+      exp: 6.0
+    arrow-despawn-rate: 1200
+    enable-zombie-pigmen-portal-spawns: false
+    wither-spawn-sound-radius: 0
+    view-distance: 10
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
     max-entity-collisions: 1
     chunks-per-tick: 650
     clear-tick-list: false
