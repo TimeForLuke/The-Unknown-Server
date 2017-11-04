@@ -3,3 +3,4 @@
 /build/
 /backup/*
 /log/*
+*.lck
