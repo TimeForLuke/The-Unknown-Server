@@ -26,7 +26,6 @@ Before (a new version of) a plugin is added, it should be checked if it creates 
 
 The following plugins are currently in use:
 
-- [CoreProtect](https://www.spigotmc.org/resources/coreprotect.8631/) v2.14.2. All rights reserved. The jar file is not included in this repository.
 - [EssentialsX](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [EssentialsXChat](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
@@ -39,10 +38,10 @@ The following plugins are currently in use:
 
 ## Setting up the server
 
-There are some scripts available in `scripts/` to set up the server:
-
-- `get-jars.sh` will download and compile the required jar files where possible and place them in `bin/`.
-- `install-jars.sh` will copy the jar files from `bin/` to their appropriate places in `server/`.
+- First get the jars in `bin/` using `git lfs pull`
+- Download Docker
+- Run `docker build .`
+- Run blabla TODO
 
 ## Contributing
 

@@ -3,9 +3,8 @@
 # If the server crashes, but the process is still running, the server could
 # still restart depending on how that's configured in ../server/spigot.yml.
 
-cd "$(dirname "${BASH_SOURCE[0]}")"
 while true; do
-    ./start-server.sh
+    /scripts/start-server.sh
 
     echo "If you want to completely stop the server process now, press Ctrl+C
           before the time is up!"
