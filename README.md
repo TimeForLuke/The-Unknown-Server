@@ -37,11 +37,17 @@ The following plugins are currently in use:
 - [WorldGuard](http://builds.enginehub.org/) development version, commit 3a8e3e8. Licensed under the GNU Lesser General Public License version 3. The full text of this license can be found in the file `licenses/LGPLv3-WorldGuard.txt`.
 
 ## Setting up the server
+You will need to install [Docker](https://www.docker.com) to run the server.
 
-- First get the jars in `bin/` using `git lfs pull`
-- Download Docker
-- Run `docker build .`
-- Run blabla TODO
+1. First get the jars in `bin/` using `git lfs pull`
+1. Run `docker build -t the-unknown .`
+1. Run `docker run -dit --mount type=bind,source=$(pwd)/server,destination=/data -p 25565:25565 --name minecraft the-unknown:latest`.
+
+To view the logs, run `docker container logs minecraft`. To use the console, run `docker attach minecraft`. To detach from the console (but keep the server running), press `Ctrl + p` followed by `Ctrl q`.
+
+Stop the server by running `stop` in the Minecraft console and pressing `Ctrl + c` when asked to.
+
+To restart the server, run `docker start minecraft`.
 
 ## Contributing
 
