@@ -10,4 +10,6 @@ COPY scripts /scripts/
 RUN mkdir -p /data/plugins
 COPY bin/* /data/plugins/
 
+WORKDIR /data
+
 ENTRYPOINT ["/scripts/setup-server.sh"]
