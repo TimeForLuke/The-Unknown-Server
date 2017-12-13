@@ -25,7 +25,7 @@ cp target/BuildTools.jar ..
 cd ..
 
 # Compile Spigot
-java -jar BuildTools.jar --rev 1.12.1
-cp spigot-1.12.1.jar $1
+java -jar BuildTools.jar --rev 1.12.2
+cp spigot-1.12.2.jar $1
 
 rm -rf $TMP
