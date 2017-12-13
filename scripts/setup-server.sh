@@ -11,4 +11,4 @@ if [ ! -e /data/plugins/NoCheatPlus.jar ]; then
 fi
 
 echo -e "Starting the server...\n"
-#/scripts/auto-restart-server.sh
+/scripts/auto-restart-server.sh
