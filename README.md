@@ -26,22 +26,20 @@ Before (a new version of) a plugin is added, it should be checked if it creates 
 
 The following plugins are currently in use:
 
-- [EssentialsX](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [EssentialsXChat](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/) v2.0.1-b319. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) v16.7.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/) v3.3. Licensed under the MIT License. The full text of this license can be found in the file `licenses/MIT-Luckperms.txt`.
-- [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds) development version, commit 7e43dea. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [Vault](http://dev.bukkit.org/bukkit-plugins/vault/) v1.5.6. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [WorldEdit](http://builds.enginehub.org/) v6.1. Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
-- [WorldGuard](http://builds.enginehub.org/) development version, commit 3a8e3e8. Licensed under the GNU Lesser General Public License version 3. The full text of this license can be found in the file `licenses/LGPLv3-WorldGuard.txt`.
+- [EssentialsX](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [EssentialsXChat](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/). Licensed under the MIT License. The full text of this license can be found in the file `licenses/MIT-Luckperms.txt`.
+- [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [Vault](http://dev.bukkit.org/bukkit-plugins/vault/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 
 ## Setting up the server
 You will need to install [Docker](https://www.docker.com) to run the server.
 
 1. First get the jars in `bin/` using `git lfs pull`
 1. Run `docker build -t the-unknown .`
-1. Run `docker run -dit --mount type=bind,source=$(pwd)/server,destination=/data -p 25565:25565 --name minecraft the-unknown:latest`.
+1. Run `docker run -dit --mount type=bind,source=$(pwd)/server,destination=/data -p 25565:25565 --name minecraft the-unknown:latest`. The first run may take considerable time, because it needs to compile the server and most plugins.
 
 To view the logs, run `docker container logs minecraft`. To use the console, run `docker attach minecraft`. To detach from the console (but keep the server running), press `Ctrl + p` followed by `Ctrl q`.
 
