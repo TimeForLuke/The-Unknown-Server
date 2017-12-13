@@ -20,49 +20,57 @@ fi
 TMP=$(mktemp -d)
 cd $TMP
 
-echo "Compiling GriefPrevention..."
-git clone https://github.com/TechFortress/GriefPrevention.git
-cd GriefPrevention
-git reset --hard ae0b0520dcc0724ab6eaefcbef27bd9d67dddccd
-mvn clean install
-cp target/GriefPrevention.jar $OUTPUT_DIRECTORY
-cd ..
+if [ ! -e "${OUTPUT_DIRECTORY}/GriefPrevention"*".jar" ]; then
+	echo "Compiling GriefPrevention..."
+	git clone https://github.com/TechFortress/GriefPrevention.git
+	cd GriefPrevention
+	git reset --hard ae0b0520dcc0724ab6eaefcbef27bd9d67dddccd
+	mvn clean install
+	cp target/GriefPrevention.jar $OUTPUT_DIRECTORY
+	cd ..
+fi
 
-echo "Compiling EssentialsX..."
-git clone https://github.com/drtshock/Essentials.git
-cd Essentials
-git reset --hard dcbc106e62f39fbe82138a5e51c07f748d7ac15b
-# We need several versions of Spigot/CraftBukkit to compile EssentialsX.
-git clone https://hub.spigotmc.org/stash/scm/spigot/buildtools.git
-cd buildtools
-git reset --hard 59469f0fef76246025b63f0dd3287cfa19a06505
-mvn package
-cp target/BuildTools.jar ..
-cd ..
-java -jar BuildTools.jar --rev 1.8
-java -jar BuildTools.jar --rev 1.8.3
-java -jar BuildTools.jar --rev 1.9
-java -jar BuildTools.jar --rev 1.9.4
-mvn clean install
-cp Essentials/target/EssentialsX-2.0.1.jar $OUTPUT_DIRECTORY
-cp EssentialsSpawn/target/EssentialsXSpawn-2.0.1.jar $OUTPUT_DIRECTORY
-cp EssentialsChat/target/EssentialsXChat-2.0.1.jar $OUTPUT_DIRECTORY
-cd ..
+if [ ! -e "${OUTPUT_DIRECTORY}/Essentials"*".jar" ]; then
+	echo "Compiling EssentialsX..."
+	git clone https://github.com/drtshock/Essentials.git
+	cd Essentials
+	git reset --hard dcbc106e62f39fbe82138a5e51c07f748d7ac15b
+	# We need several versions of Spigot/CraftBukkit to compile EssentialsX.
+	git clone https://hub.spigotmc.org/stash/scm/spigot/buildtools.git
+	cd buildtools
+	git reset --hard 59469f0fef76246025b63f0dd3287cfa19a06505
+	mvn package
+	cp target/BuildTools.jar ..
+	cd ..
+	java -jar BuildTools.jar --rev 1.8
+	java -jar BuildTools.jar --rev 1.8.3
+	java -jar BuildTools.jar --rev 1.9
+	java -jar BuildTools.jar --rev 1.9.4
+	mvn clean install
+	cp Essentials/target/EssentialsX-2.0.1.jar $OUTPUT_DIRECTORY
+	cp EssentialsSpawn/target/EssentialsXSpawn-2.0.1.jar $OUTPUT_DIRECTORY
+	cp EssentialsChat/target/EssentialsXChat-2.0.1.jar $OUTPUT_DIRECTORY
+	cd ..
+fi
 
-git clone https://github.com/lucko/LuckPerms.git
-cd LuckPerms/
-git reset --hard e5ce64266f1aaf5bc745cfb33e3cd3a1dbe3da32
-mvn clean package
-cp bukkit/target/LuckPerms-Bukkit-4.0.47.jar $OUTPUT_DIRECTORY
-cd ..
+if [ ! -e "${OUTPUT_DIRECTORY}/LuckPerms"*".jar" ]; then
+	git clone https://github.com/lucko/LuckPerms.git
+	cd LuckPerms/
+	git reset --hard e5ce64266f1aaf5bc745cfb33e3cd3a1dbe3da32
+	mvn clean package
+	cp bukkit/target/LuckPerms-Bukkit-4.0.47.jar $OUTPUT_DIRECTORY
+	cd ..
+fi
 
-echo "Compiling NoCheatPlus..."
-git clone https://github.com/NoCheatPlus/NoCheatPlus.git
-cd NoCheatPlus
-git reset --hard 7e43deaa28fb66a7b8273eed8d9dfa8956e97d62
-mvn package -P spigot1_11_r1 -P ncp_base
-cp target/NoCheatPlus.jar $OUTPUT_DIRECTORY
-cd ..
+if [ ! -e "${OUTPUT_DIRECTORY}/NoCheatPlus"*".jar" ]; then
+	echo "Compiling NoCheatPlus..."
+	git clone https://github.com/NoCheatPlus/NoCheatPlus.git
+	cd NoCheatPlus
+	git reset --hard 7e43deaa28fb66a7b8273eed8d9dfa8956e97d62
+	mvn package -P spigot1_11_r1 -P ncp_base
+	cp target/NoCheatPlus.jar $OUTPUT_DIRECTORY
+	cd ..
+fi
 
 # Building Vault failed because it can't resolve some dependencies.
 #git clone https://github.com/MilkBowl/Vault.git
