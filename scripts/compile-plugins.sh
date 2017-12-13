@@ -58,7 +58,7 @@ if [ ! -e "${OUTPUT_DIRECTORY}/LuckPerms"*".jar" ]; then
 	cd LuckPerms/
 	git reset --hard e5ce64266f1aaf5bc745cfb33e3cd3a1dbe3da32
 	mvn clean package
-	cp bukkit/target/LuckPerms-Bukkit-4.0.47.jar $OUTPUT_DIRECTORY
+	cp bukkit/target/LuckPerms-Bukkit-4.0.46.jar $OUTPUT_DIRECTORY
 	cd ..
 fi
 
