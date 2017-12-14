@@ -4,7 +4,7 @@
 
 repo_dir="$(dirname "${BASH_SOURCE[0]}")/.."
 backup_dir=${repo_dir}/backup
-today=${date +"%F")
+today=$(date +"%F")
 
 getopts q quiet
 if [[ "$quiet" == "q" ]]; then
