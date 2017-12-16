@@ -15,5 +15,8 @@ fi
 
 $verbose && echo "Backing up the server files..."
 tar czf ${backup_dir}/backup-survival-${today}.tar.gz -C $repo_dir server
+success=$?
 
 $verbose && echo "Done!"
+
+exit $success
