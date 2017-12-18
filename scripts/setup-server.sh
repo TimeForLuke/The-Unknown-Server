@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -e "server/spigot"*".jar" ]; then
+if [ ! -e "/data/spigot"*".jar" ]; then
   echo -e "Compiling Spigot...\n"
   /scripts/compile-spigot.sh "/data"
 fi
