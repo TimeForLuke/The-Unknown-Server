@@ -26,6 +26,7 @@ Before (a new version of) a plugin is added, it should be checked if it creates 
 
 The following plugins are currently in use:
 
+- [Bukkit-Mailman](https://github.com/Omniscimus/Bukkit-Mailman). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [EssentialsX](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [EssentialsXChat](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [EssentialsXSpawn](https://ci.drtshock.net/job/EssentialsX/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
