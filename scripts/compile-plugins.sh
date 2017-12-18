@@ -76,7 +76,7 @@ if [ ! -e "${OUTPUT_DIRECTORY}/Bukkit-Mailman"*".jar" ]; then
 	echo "Compiling Bukkit-Mailman..."
 	git clone https://github.com/Omniscimus/Bukkit-Mailman.git
 	cd Bukkit-Mailman
-	git reset --hard 92ee7c9b25686433d20145a18eafe2d50198044f
+	git reset --hard 0262c53ae491a0d393ea587801aa1f65985c66bd
 	mvn clean install
 	cp target/Bukkit-Mailman-0.0.1.jar $OUTPUT_DIRECTORY
 	cd ..
