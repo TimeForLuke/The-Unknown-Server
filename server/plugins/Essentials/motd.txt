@@ -1,4 +1,3 @@
 &6By playing on this server, you agree to the /rules.
-&eThis server's configuration is publicly accessible via &7&nhttps://git.io/vbz1d&r&e. You can change stuff too, if you like.
+&eThis server's configuration is publicly accessible via &7&nhttps://git.io/vbQeM&r&e. You can change stuff too, if you like.
 &eFeel free to contact the admin at &7omni@omniscimus.net&e for any comments, questions or suggestions!
-&cNote: &eI'm thinking about adding some kind of democracy feature, where the players can vote which plugins the server should have, whether pvp should be on, etc. etc. Please subscribe to the newsletter, I'll send a message when I know more! Use the &6/mailman&e command. Also, if you have any thoughts about this, I'd love to hear from you at &7omni@omniscimus.net&e!
