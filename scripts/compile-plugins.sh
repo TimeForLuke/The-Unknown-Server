@@ -8,7 +8,7 @@
 # - jdk 8
 # Usage: ./script output_directory
 #
-# Due to dependency issues during the build processes, Vault and NoCheatPlus
+# Due to dependency issues during the build processes, Vault, WorldEdit and NoCheatPlus
 # have been included as jar files in this repository.
 
 OUTPUT_DIRECTORY=$1

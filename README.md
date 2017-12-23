@@ -34,6 +34,7 @@ The following plugins are currently in use:
 - [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/). Licensed under the MIT License. The full text of this license can be found in the file `licenses/MIT-Luckperms.txt`.
 - [NoCheatPlus](https://github.com/NoCheatPlus/Docs/wiki/Notable-Builds). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 - [Vault](http://dev.bukkit.org/bukkit-plugins/vault/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
+- [WorldEdit](http://builds.enginehub.org/). Licensed under the GNU General Public License v3.0. The full text of this license can be found in the file `licenses/GPLv3.txt`.
 
 ## Setting up the server
 You will need to install [Docker](https://www.docker.com) to run the server.
