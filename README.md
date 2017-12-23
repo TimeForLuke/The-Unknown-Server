@@ -1,6 +1,6 @@
-# The Unknown Server
+<p align="center"><img src="logo.jpg" alt="Logo" width="150px"></p>
 
-<img src="logo.jpg" alt="Logo" style="width: 150px;">
+# The Unknown Server
 
 This repository contains the configuration files for *The Unknown*, a Minecraft server. Please refer to [the wiki](https://github.com/The-Unknown-Minecraft/The-Unknown-Server/wiki) for non-technical information about the server.
 
