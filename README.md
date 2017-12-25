@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.jpg" alt="Logo" width="150px"></p>
+<p align="center"><img src="media/logo.jpg" alt="Logo" width="150px"></p>
 
 # The Unknown Server
 
