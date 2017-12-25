@@ -1,17 +1,17 @@
 &6-------------------------------------------
 &c Rules
 
+&6This server's Code of Conduct can be found on the following webpage:
+&6https://git.io/vb7yw
+&6In addition, we use the following practical rules on this server:
+
 &6- Do not scam
 &6- Do not cheat or hack
 &6- Do not spam the chat
-&6- Do not use offensive language
 &6- Do not abuse bugs
 &6- Do not try to evade anti-AFK measures
 &6- Use only your own Minecraft account on this server
-&6- Do not incite others to break the rules
 
-&6The staff has the right to deny you access to any service of the server, if they see good reason for it.
-&6The staff is not responsible for any damage deriving from the use of the server, or from the impossibility to use it.
-&6Any donations you make, will not be refunded.
+&6The administrators and moderators of this server are not responsible for any damage deriving from the use of the server, or from the impossibility to use it.
 
 &6-------------------------------------------

@@ -1,3 +1,2 @@
 &6By playing on this server, you agree to the /rules.
-&eThis server's configuration is publicly accessible via &7&nhttps://git.io/vbQeM&r&e. You can change stuff too, if you like.
-&eFeel free to contact the admin at &7omni@omniscimus.net&e for any comments, questions or suggestions!
+&ePlease check out our website at &7&nhttps://git.io/vbQeM&r&e! There are many ways to contribute to the server.

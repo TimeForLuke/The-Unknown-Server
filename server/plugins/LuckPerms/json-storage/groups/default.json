@@ -6,9 +6,11 @@
     "essentials.delhome",
     "essentials.help",
     "essentials.home",
+    "essentials.ignore",
     "essentials.list",
     "essentials.mail",
     "essentials.mail.send",
+    "essentials.me",
     "essentials.motd",
     "essentials.msg",
     "essentials.msg.url",
@@ -23,6 +25,6 @@
     "essentials.tpaccept",
     "essentials.tpahere",
     "essentials.tpdeny",
-    "prefix.0. \u0026a[U] "
+    "prefix.0. &a[U] "
   ]
 }

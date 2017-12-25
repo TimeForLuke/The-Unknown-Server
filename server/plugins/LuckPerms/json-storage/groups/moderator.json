@@ -1,7 +1,26 @@
 {
   "name": "moderator",
   "permissions": [
-    "group.default",
-    "prefix.1. \u00266[M] "
+    "essentials.seen.*",
+    "griefprevention.*",
+    "essentials.ban",
+    "essentials.banip",
+    "essentials.invsee",
+    "essentials.kick",
+    "essentials.mute",
+    "essentials.socialspy",
+    "essentials.tempban",
+    "essentials.tp",
+    "essentials.tphere",
+    "essentials.unban",
+    "essentials.unbanip",
+    "essentials.vanish",
+    "nocheatplus.command.info",
+    "nocheatplus.command.inspect",
+    "nocheatplus.command.notify",
+    "prefix.1. &6[M] "
+  ],
+  "parents": [
+    "default"
   ]
 }

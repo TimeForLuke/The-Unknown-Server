@@ -1,0 +1,9 @@
+{
+  "uuid": "eb684c74-cdee-4909-846a-4b875ee589c6",
+  "name": "boris_vb",
+  "primaryGroup": "moderator",
+  "parents": [
+    "default",
+    "moderator"
+  ]
+}

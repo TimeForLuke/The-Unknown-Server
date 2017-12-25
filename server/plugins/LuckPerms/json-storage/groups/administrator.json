@@ -1,7 +1,10 @@
 {
   "name": "administrator",
   "permissions": [
-    "group.moderator",
-    "prefix.2. \u00269[A] "
+    "luckperms.*",
+    "prefix.2. &9[A] "
+  ],
+  "parents": [
+    "moderator"
   ]
 }
