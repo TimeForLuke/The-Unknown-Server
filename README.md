@@ -6,7 +6,9 @@ This repository contains the configuration files for *The Unknown*, a Minecraft 
 
 ## Contributing
 
-If you have any suggestions for improvements to the server, you can open an issue in the GitHub issue tracker, or contact one of the administrators. Or, even better, you can fork this project on GitHub and make the improvements yourself. Pull requests are welcome! (But not guaranteed to be merged; it may be better to open an issue first if you plan on making radical changes.)
+There are many ways to contribute to the server. To find out how you can help, have a look at [the contributing guide](https://github.com/The-Unknown-Minecraft/The-Unknown-Server/wiki/Contributing).
+
+If you would like to improve something in the server's configuration or its plugins, you can fork this project on GitHub and make the improvements yourself. Pull requests are welcome! (But not guaranteed to be merged; it may be better to open an issue first if you plan on making radical changes.) You can also click the Edit button (:pencil2:) to the top right of files in the repository. If you experience any problems, don't hesitate to send an email to the administrator!
 
 ## Plugins
 
@@ -26,7 +28,36 @@ The following plugins are currently in use:
 
 ## Setting up the server
 
-You will need to install [Docker](https://www.docker.com) and [git-lfs](https://git-lfs.github.com/) to run the server.
+We use Docker to run the server in a container. We also compile the server and most plugins from source. Some people may find it easier to run the server without installing Docker and compiling stuff. You will then have to install some additional programs. If you use Docker, you only have to install Docker.
+
+### (Easiest way) Without Docker, download the server and plugins from somewhere
+
+This may be the easiest way to run the server for people unfamiliar with Docker. You will only need to install Java 1.8 or higher. Download the repository. Download all required jar-files for the server and plugins yourself and put them in the `server/` and `server/plugins/` directories. Then open a terminal window (or the `cmd` utility for Windows), change directory to the `server/` directory and start the server using the following command (replace <version> with the version of Spigot in the `server/` directory):
+
+```bash
+java -jar spigot-<version>.jar
+```
+
+### Without Docker, compile the server and plugins yourself
+
+To test the server without Docker, you will need to install Java 1.8 or higher, Git, [git-lfs](https://git-lfs.github.com/) and Maven. Download or clone this repository, open a terminal, change directory to this repository and run the following commands to get all required plugin and server files in their proper locations:
+
+```bash
+git lfs pull
+scripts/compile-spigot.sh server
+scripts/compile-plugins.sh server/plugins
+cp bin/* server/plugins
+```
+
+Then change directory to `server/` and start the server using the following command (replace <version> with the version of Spigot in the `server/` directory):
+
+```bash
+java -jar spigot-<version>.jar
+```
+
+### Production
+
+To run the server the same way as in production, you will need to install [Docker](https://www.docker.com) and [git-lfs](https://git-lfs.github.com/).
 
 1. First get the jars in `bin/` using `git lfs pull`
 1. Run `docker build -t the-unknown .`
