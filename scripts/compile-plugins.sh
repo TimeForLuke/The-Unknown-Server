@@ -72,16 +72,6 @@ if [ ! -e "${OUTPUT_DIRECTORY}/NoCheatPlus"*".jar" ]; then
 	cd ..
 fi
 
-if [ ! -e "${OUTPUT_DIRECTORY}/Bukkit-Mailman"*".jar" ]; then
-	echo "Compiling Bukkit-Mailman..."
-	git clone https://github.com/Omniscimus/Bukkit-Mailman.git
-	cd Bukkit-Mailman
-	git reset --hard 0262c53ae491a0d393ea587801aa1f65985c66bd
-	mvn clean install
-	cp target/Bukkit-Mailman-0.0.1.jar $OUTPUT_DIRECTORY
-	cd ..
-fi
-
 # Building Vault failed because it can't resolve some dependencies.
 #git clone https://github.com/MilkBowl/Vault.git
 #cd Vault/
